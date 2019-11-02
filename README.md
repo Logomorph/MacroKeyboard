@@ -40,5 +40,7 @@ Holding *master* and the second key on its right will clear all paired devices.
 The keys are set up using a keyboard matrix. The top-left key is not included in the matrix, as it has to be able to wake the Arduino from sleep. It is set up as an interrupt.
 
 # Missing stuff
+- Circuit diagram (coming soon)
+- Layout diagram (coming soon)
 - Sending keys through the USB connection. Technically possible and the reason why I chose a 32u4 Arduino, but still to be implemented
 - LiPo voltage reading isn't the best
