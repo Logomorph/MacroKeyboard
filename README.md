@@ -9,7 +9,7 @@ I made this to improve my workflow at work and to avoid the finger gymnastics ch
 The keyboard is designed to work in conjunction with a tool like BetterTouchTool, which maps key presses to other shortcuts, based on the app in focus. 
 The keyboard transmits <kbd>CMD</kbd> + <kbd>control</kbd> + <kbd>shift</kbd> + <kbd>F1</kbd> -> <kbd>F12</kbd> and <kbd>1</kbd> ->  <kbd>3</kbd>, to cover all the keys.
 Using BetterTouchTool, these inputs can be mapped to various actions for each app.
-Besides this, the top left, when long pressed, transmits kbd>CMD</kbd> + <kbd>control</kbd> + <kbd>shift</kbd> + <kbd>option</kbd> + <kbd>F1</kbd> and puts the keyboard in sleep mode. This is useful for setting up a shortcut to lock the Mac.
+Besides this, the top left, when long pressed, transmits <kbd>CMD</kbd> + <kbd>control</kbd> + <kbd>shift</kbd> + <kbd>option</kbd> + <kbd>F1</kbd> and puts the keyboard in sleep mode. This is useful for setting up a shortcut to lock the Mac.
 
 # Bill of materials
 | Item | Description |
