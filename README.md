@@ -1,6 +1,6 @@
 # Macro Keyboard
 A 15-key Arduino-based, bluetooth wireless, mechanical macro keyboard.
-I made this to improve my workflow at work and to avoid the finger gymnastics characteristic to iOS development.
+I made this to improve my workflow at work and to avoid the finger gymnastics characteristic to iOS development. It charges and can be programed on-the-fly via USB-C.
 # Glamour shots
 ![](/rsc/final3.jpg)
 ![](/rsc/final1.jpg)
@@ -14,11 +14,16 @@ Using BetterTouchTool, these inputs can be mapped to various actions for each ap
 
 Besides this, the top left key "master", when long pressed, transmits <kbd>CMD</kbd> + <kbd>control</kbd> + <kbd>shift</kbd> + <kbd>option</kbd> + <kbd>F1</kbd> and puts the keyboard in sleep mode. This is useful for setting up a shortcut to lock the Mac.
 
-After 5 minutes where no keys are pressed, the keyboard turns off the bluetooth module and the arduino goes to deep sleep. The "master" key acts as a weke-up key and will turn the arduino and the bluetooth back on.
+After 5 minutes where no keys are pressed, the keyboard turns off the bluetooth module and the arduino goes to deep sleep. The "master" key acts as a wake-up key and will turn the arduino and the bluetooth back on.
 In my use, the battery lasts about 2-3 weeks.
 
 At startup, holding the *master* key and the first key on its right and then turning on the power, will force *Pairing mode*
 Holding *master* and the second key on its right will clear all paired devices.
+# Folder structure
+
+    .
+    ├── src                         # source code for the arduino
+    ├── stl                         # STL files for the case and the lid
 
 # Bill of materials
 | Item | Description |
@@ -35,6 +40,7 @@ Holding *master* and the second key on its right will clear all paired devices.
 | P-channel mosfet | Used for LiPo bypass when charging. We don't want to drain the battery while it's charging, as this can break the LiPo |
 | Resistors | Used as pull-down resistors for the keyboard matrix and as a voltage divider to check the LiPo battery level |
 | Keycaps | I 3D printed some from https://www.thingiverse.com/thing:468651, but you can pick whatever you fancy |
+| Spare micro-USB cable | Canibalized to linke the Arduino to the USB-C breakout board. This allows programming without taking the keyboard apart. |
 
 # The circuit
 The keys are set up using a keyboard matrix. The top-left key is not included in the matrix, as it has to be able to wake the Arduino from sleep. It is set up as an interrupt.
