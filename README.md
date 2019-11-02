@@ -2,9 +2,9 @@
 A 15-key Arduino-based, bluetooth wireless, mechanical macro keyboard.
 I made this to improve my workflow at work and to avoid the finger gymnastics characteristic to iOS development.
 # Glamour shots
-![](/rsc/final3.jpg){:height="50%" width="50%"}
-![](/rsc/final1.jpg){:height="50%" width="50%"}
-![](/rsc/final2.jpg){:height="50%" width="50%"}
+![](/rsc/final3.jpg)
+![](/rsc/final1.jpg)
+![](/rsc/final2.jpg)
 # How it works
 The keyboard is designed to work in conjunction with a tool like BetterTouchTool, which maps key presses to other shortcuts, based on the app in focus. Although I haven't tested it (lacking a PC with bluetooth), this should work just fine on Windows using a tool like AutoHotkey
 
