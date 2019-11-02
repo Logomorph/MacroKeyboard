@@ -2,6 +2,9 @@
 A 15-key Arduino-based, bluetooth wireless, mechanical macro keyboard.
 I made this to improve my workflow at work and to avoid the finger gymnastics characteristic to iOS development.
 # Glamour shots
+![](https://raw.githubusercontent.com/Logomorph/MacroKeyboard/master/rsc/final3.jpg)
+![](https://raw.githubusercontent.com/Logomorph/MacroKeyboard/master/rsc/final1.jpg)
+![](https://raw.githubusercontent.com/Logomorph/MacroKeyboard/master/rsc/final2.jpg)
 # How it works
 The keyboard is designed to work in conjunction with a tool like BetterTouchTool, which maps key presses to other shortcuts, based on the app in focus. 
 The keyboard transmits <kbd>CMD</kbd> + <kbd>control</kbd> + <kbd>shift</kbd> + <kbd>F1</kbd> -> <kbd>F12</kbd> and <kbd>1</kbd> ->  <kbd>3</kbd>, to cover all the keys.
