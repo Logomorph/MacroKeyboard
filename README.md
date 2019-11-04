@@ -43,7 +43,7 @@ Holding *master* and the second key on its right will clear all paired devices.
 | Spare micro-USB cable | Canibalized to link the Arduino to the USB-C breakout board. This allows programming without taking the keyboard apart. |
 
 # The layout
-While the box does fit all the required components, albeit it's a tight fit, I designed it for the components I used. You can see its layout in the diagram below.
+The box is designed for the components I used. It's a bit of a squeeze, but everything fits in the end. You can see its layout in the diagram below.
 ![](/rsc/layout_diagram.png)
 
 # The circuit
