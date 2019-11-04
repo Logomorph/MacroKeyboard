@@ -37,13 +37,14 @@ Holding *master* and the second key on its right will clear all paired devices.
 | TP4056 LiPo charger | Ebay or Aliexpress |
 | SPDT Switch | https://www.adafruit.com/product/805 |
 | Diodes | |
+| 2N2222 transistor | Used to turn the bluetooth module on/off to when entering/exiting sleep mode |
 | P-channel mosfet | Used for LiPo bypass when charging. We don't want to drain the battery while it's charging, as this can break the LiPo |
 | Resistors | Used as pull-down resistors for the keyboard matrix and as a voltage divider to check the LiPo battery level |
 | Keycaps | I 3D printed some from https://www.thingiverse.com/thing:468651, but you can pick whatever you fancy |
 | Spare micro-USB cable | Canibalized to link the Arduino to the USB-C breakout board. This allows programming without taking the keyboard apart. |
 
 # The layout
-The box is designed for the components I used. It's a bit of a squeeze, but everything fits in the end. You can see its layout in the diagram below.
+The box is designed for the components I used. It's a bit of a squeeze, but everything fits in the end. You can see its layout in the diagram below. The empty spaces are used to store wires, resistors and the NPN transistor used to turn the bluetooth board on/off.
 ![](/rsc/layout_diagram.png)
 
 # The circuit
