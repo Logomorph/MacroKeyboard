@@ -87,11 +87,11 @@ void monitorBattery() {
   }
   lastBatteryCheck = currentTime;
   lipoValue = analogRead(lipoVoltage);
-  lipoValue = (lipoValue * 2.0f *  4.7f) / 1024.0f;
-  if (lipoValue < 3.6) {
+  lipoValue = (lipoValue * 2.0f *  3.3f) / 1024.0f;
+  if (lipoValue < 3.2) {
     isLowBattery = true;
   }
-  if (lipoValue < 3.5) {
+  if (lipoValue < 3.1) {
     isEmptyBattery = true;
   }
   if (isEmptyBattery && currentTime - lastBatteryWarning > 1000) {
@@ -167,20 +167,14 @@ void processKeyPresses() {
 
     byte data[] = {0xFD, 0x9, 0x1, (byte)0b00001111, (byte)0x0,(byte)0x3A,(byte)0x0,(byte)0x0,(byte)0x0,(byte)0x0,(byte)0x0,(byte)0x0,(byte)0x0};
     btSerial.write(data, sizeof(data));
-//    delay(50);
-//    byte data3[] = {0xFD, 0x3, 0x3, 0x08, (byte)0x0};
-//    btSerial.write(data3, sizeof(data3));
-//    delay(50);
+
     byte data2[] = {0xFD, 0x9, 0x1, (byte)0x0, (byte)0x0,(byte)0x0,(byte)0x0,(byte)0x0,(byte)0x0,(byte)0x0,(byte)0x0,(byte)0x0,(byte)0x0};
     btSerial.write(data2, sizeof(data2));
     
-    //btSerial.write(0x3A);
-    //Keyboard.write(0xf8);
     enableStatusLed(true);
     delay(1000);
     enableStatusLed(false);
     enterSleep();
-//    matrix[0].val = millis();
   } else {
     byte data[] = {0xFE, 0x5, (byte)0b0000111, (byte)0x0, (byte)0x0, (byte)0x0, (byte)0x0, (byte)0x0};
     byte keysDown = 0;
@@ -224,23 +218,7 @@ void processKeyPresses() {
     Serial.println();
     btSerial.write(finalArray, (keysDown+3) * sizeof(byte));
     delete [] finalArray;
-    
-//    byte data[] = {0xFE, 0x2, (byte)0b0001000, (byte)0x16};
-//    btSerial.write(data, sizeof(data));
-//    delay(50);
-//    btSerial.write(0xFD);
-//    btSerial.write((byte)0x0);
   }
-}
-
-void btSetBaudRate() {
-  digitalWrite(btPower, HIGH);
-  btSerial.begin(115200);
-  btSerial.print("CMD");
-  delay(100);
-  btSerial.println("U,9600,E");
-  delay(100);
-  btSerial.println("R1");
 }
 
 void btEnterPairMode() {
