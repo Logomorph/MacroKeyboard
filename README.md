@@ -23,7 +23,7 @@ Holding *master* and the second key on its right will clear all paired devices.
 
     .
     ├── src                         # source code for the arduino
-    ├── stl                         # STL files for the case and the lid
+    └── stl                         # STL files for the case and the lid
 
 # Bill of materials
 | Item | Description |
@@ -42,11 +42,14 @@ Holding *master* and the second key on its right will clear all paired devices.
 | Keycaps | I 3D printed some from https://www.thingiverse.com/thing:468651, but you can pick whatever you fancy |
 | Spare micro-USB cable | Canibalized to linke the Arduino to the USB-C breakout board. This allows programming without taking the keyboard apart. |
 
+# The layout
+While the box does fit all the required components, albeit it's a tight fit, I designed it for the components I used. You can see its layout in the diagram below.
+![](/rsc/layout_diagram.png)
+
 # The circuit
 The keys are set up using a keyboard matrix. The top-left key is not included in the matrix, as it has to be able to wake the Arduino from sleep. It is set up as an interrupt.
 
 # Missing stuff
 - Circuit diagram (coming soon)
-- Layout diagram (coming soon)
 - Sending keys through the USB connection. Technically possible and the reason why I chose a 32u4 Arduino, but still to be implemented
 - LiPo voltage reading isn't the best
