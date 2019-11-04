@@ -40,7 +40,7 @@ Holding *master* and the second key on its right will clear all paired devices.
 | P-channel mosfet | Used for LiPo bypass when charging. We don't want to drain the battery while it's charging, as this can break the LiPo |
 | Resistors | Used as pull-down resistors for the keyboard matrix and as a voltage divider to check the LiPo battery level |
 | Keycaps | I 3D printed some from https://www.thingiverse.com/thing:468651, but you can pick whatever you fancy |
-| Spare micro-USB cable | Canibalized to linke the Arduino to the USB-C breakout board. This allows programming without taking the keyboard apart. |
+| Spare micro-USB cable | Canibalized to link the Arduino to the USB-C breakout board. This allows programming without taking the keyboard apart. |
 
 # The layout
 While the box does fit all the required components, albeit it's a tight fit, I designed it for the components I used. You can see its layout in the diagram below.
