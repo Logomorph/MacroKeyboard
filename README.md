@@ -49,7 +49,10 @@ While the box does fit all the required components, albeit it's a tight fit, I d
 # The circuit
 The keys are set up using a keyboard matrix. The top-left key is not included in the matrix, as it has to be able to wake the Arduino from sleep. It is set up as an interrupt.
 
+Since the LiPo charger doesn't have a bypass for when it's plugged in, and it's dangerous to charge a LiPo while draining it, a bypass circuit is needed. I used the one described here and it works perfectly: https://arduino.stackexchange.com/questions/39805/can-you-charge-and-use-a-lipo-battery-at-the-same-time.
+
 # Missing stuff
 - Circuit diagram (coming soon)
 - Sending keys through the USB connection. Technically possible and the reason why I chose a 32u4 Arduino, but still to be implemented
 - LiPo voltage reading isn't the best
+- This could easily be implemented with an Adafruit Feather 32u4 Bluefruit (https://learn.adafruit.com/adafruit-feather-32u4-bluefruit-le/overview). It has on-board bluetooth, LiPo voltage reading abd reporting and a battery charger. It should simplify the circuit, shoud fit fine in the case and could allow for a larger battery, too.
