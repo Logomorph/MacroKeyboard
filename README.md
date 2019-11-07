@@ -48,6 +48,7 @@ The keys are set up like this:
 | Resistors | Used as pull-down resistors for the keyboard matrix and as a voltage divider to check the LiPo battery level |
 | Keycaps | I 3D printed some from https://www.thingiverse.com/thing:468651, but you can pick whatever you fancy |
 | Spare micro-USB cable | Canibalized to link the Arduino to the USB-C breakout board. This allows programming without taking the keyboard apart. |
+| 4 x anti-slip pads | Need to fit into the circular cut-outs on the bottom of the case. Help keep it steady on the desk. I used transparent self-adhesive ones, but you can stick them on with anything |
 
 # The layout
 The box is designed for the components I used. It's a bit of a squeeze, but everything fits in the end. You can see its layout in the diagram below. The empty spaces are used to store wires, resistors and the NPN transistor used to turn the bluetooth board on/off.
