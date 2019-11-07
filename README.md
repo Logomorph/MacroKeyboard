@@ -34,7 +34,7 @@ The keys are set up like this:
 # Bill of materials
 | Item | Description |
 | ------ | ------ |
-| 15 CHerry MX Mechanical switches with diode | I used Ebay, but the closest/cheapest the better |
+| 15 Cherry MX Mechanical switches with diode | I used Ebay, but the closest/cheapest the better |
 | Arduino Pro Micro 32u4 (I used a clone) | Ebay |
 | HC-05 bluetooth module | Take care to not get the "fake" one. You need to flash it with the RN-42 Firmware and the "fake" one won't work. Google is your friend here |
 | Adafruit USB-C breakout | https://www.adafruit.com/product/4090 |
