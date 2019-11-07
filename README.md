@@ -19,6 +19,10 @@ In my use, the battery lasts about 2-3 weeks.
 
 At startup, holding the *master* key and the first key on its right and then turning on the power, will force *Pairing mode*
 Holding *master* and the second key on its right will clear all paired devices.
+
+The keys are set up like this:
+![](/rsc/key_layout.png)
+
 # Folder structure
 
     .
