@@ -60,6 +60,7 @@ Since the LiPo charger doesn't have a bypass for when it's plugged in, and it's 
 
 # Missing stuff
 - Circuit diagram (coming soon)
+- Ghosting mitigation
 - Sending keys through the USB connection. Technically possible and the reason why I chose a 32u4 Arduino, but still to be implemented
 - LiPo voltage reading isn't the best
 - This could easily be implemented with an Adafruit Feather 32u4 Bluefruit (https://learn.adafruit.com/adafruit-feather-32u4-bluefruit-le/overview). It has on-board bluetooth, LiPo voltage reading and reporting along with a battery charger. It should simplify the circuit, fit fine in the case and could allow for a larger battery, too.
