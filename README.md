@@ -21,6 +21,7 @@ At startup, holding the *master* key and the first key on its right and then tur
 Holding *master* and the second key on its right will clear all paired devices.
 
 The keys are set up like this:
+
 <kbd>CMD</kbd> + <kbd>control</kbd> + <kbd>shift</kbd> + 
 ![](/rsc/key_layout.png)
 
